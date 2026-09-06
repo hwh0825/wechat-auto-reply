@@ -1,0 +1,9 @@
+rapidocr-onnxruntime
+requests
+PyYAML
+pywin32
+pyperclip
+pillow
+customtkinter
+pystray
+# 打包exe另需：pyinstaller（build_app.py 会自动安装）

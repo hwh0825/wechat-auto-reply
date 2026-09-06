@@ -1,0 +1,22 @@
+# ===== 机密/私人文件，绝对不能上传 =====
+.env
+config.yaml
+persona.md
+state.json
+bot.lock
+logs
+dist
+dist_*
+build
+assets/app.ico
+*.yaml.broken
+.*.tmp
+
+# ===== Python =====
+__pycache__
+*.py[cod]
+*.egg-info
+
+# ===== 调试/构建产物 =====
+debug_*.png
+*.spec

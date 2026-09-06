@@ -1,0 +1,23 @@
+# 微信自动回复助手配置（程序在配置缺失/损坏时自动生成）
+# 改完保存即可，脚本每轮循环会自动重新加载
+
+# 监控对象：好友昵称/备注名，必须和微信会话列表显示一致，仅支持私聊
+watch_list:
+  - "文件传输助手"
+
+reply_mode: multi          # single=单聊常驻（停在聊天页，句句有回应）｜multi=多人轮询
+ocr_poll: 20               # 检测间隔（秒）
+send_delay: 1.2            # 键盘操作间隔（秒）
+min_ui_interval: 5         # 两次发送的最小间隔（秒）
+max_replies_per_hour: 0    # 单联系人每小时回复上限；0 = 不限制
+max_reply_chars: 300       # 单条回复最大长度
+dedup_ttl: 180             # 同预览未读的去重冷却（秒）
+quiet_hours: []            # 静默时段，如 ["02:00", "07:30"]；空 = 全天
+
+sensitive_keywords:        # 命中不代回，弹窗转人工
+  - "转账"
+  - "红包"
+  - "借钱"
+  - "验证码"
+
+max_consecutive_errors: 5  # 连续出错 N 次自动停止
